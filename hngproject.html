@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>ESETANGDAN'S PROFILE</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style>
+
+body{
+ 	font-family: roboto;
+}
+nav{
+	float: right;
+}
+	.Login{
+	border: 0px;
+	padding: 5px;
+	background-color: white;
+}
+	.Signout{
+	border: 0px;
+	padding: 5px;
+	background-color: white;
+}
+	.header{
+	 padding-top: 70px;
+	 color: #FE0000;
+	 font-weight: bold;
+	 padding-left: 255px
+}
+	.paragraph{
+	padding-right: 1000px
+	line-height: 70px;
+	word-wrap: 10px;
+	width:40%;
+	max-width: 30rem;
+	padding-bottom: 20px;
+		}
+	.nospace{
+		line-height: 5px;
+		p{
+			line-height: 5px;
+		}
+	}
+</style>
+
+<body>
+
+<nav>
+<button class="Login">Login</button>
+<button class="Signout">Sign out</button>
+</nav>
+<div>
+<h1 class="header">COUNTRY SIDE FLOWERS</h1>
+<div class="paragraph" style="margin-left:255px;">
+<p>Country Side Flowers sales flowers of diffent kind and aslo provide the following services:</p><br>
+
+<div class="nospace">
+<p>Gardening</p>
+<p>Landscaping</p>
+<p>Floriculture and much more</p>
+</div>
+</div>
+</div>
+
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+
+<body onload="startTime()">
+
+<div id="txt"></div>
+
+
+</body>
+</html>
